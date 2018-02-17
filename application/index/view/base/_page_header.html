@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Same</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="description" content="Same"/>
+    <meta name="Keywords" content="志趣相投, 就是聊得来"/>
+
+    <link href="__STATIC__/vendor/bootstrap-4.0.0-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="__STATIC__/style/style.css" rel="stylesheet" type="text/css">
+
+    <script src="__STATIC__/vendor/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="__STATIC__/vendor/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+
+
+    {if condition="APP_ENV !== 'pro'"}
+
+    <script>var debug;</script>
+
+    {else /}
+
+    <!--<link rel="dns-prefetch" href="//static.oh-same.com/">-->
+
+    {/if}
+
+
+    {if condition="$is_logged_in === true"}
+
+    <script>window.is_logged_in = true; // 用户已登录</script>
+
+
+    {else /}
+
+    <script>window.is_logged_in = false; // 用户未登录</script>
+
+    {/if}
+
+</head>
